@@ -9,10 +9,52 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">77,109</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,351</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCases.LoginTests</td><td><a href="#m0">Add_productToCart</a></td><td rowspan="1">1758184879006</td><td rowspan="1">56721</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">TestCases.LoginTests</td><td><a href="#m0">StartAndroid_Session</a></td><td rowspan="1">1758190671300</td><td rowspan="1">1274</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">TestCases.LoginTests</td><td><a href="#m1">stopAndroidSession</a></td><td rowspan="1">1758190672640</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">TestCases.LoginTests</td><td><a href="#m2">Add_productToCart</a></td><td rowspan="1">1758190672635</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestCases.LoginTests#Add_productToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestCases.LoginTests#StartAndroid_Session</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;\AndroidBuilds\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;SF-LAP-1082&apos;, ip: &apos;192.168.1.2&apos;
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: \AndroidBuilds\Android.Sauc..., appium:automationName: UiAutomator2, appium:deviceName: Medium Phone API 36.0, platformName: ANDROID}]}]
+Capabilities {appium:app: \AndroidBuilds\Android.Sauc..., appium:automationName: UiAutomator2, appium:deviceName: Medium Phone API 36.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Android_config.AppiumSessionManager.startAndroidSession(AppiumSessionManager.java:113)
+	at TestCases.LoginTests.StartAndroid_Session(LoginTests.java:35)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCases.LoginTests#stopAndroidSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCases.LoginTests#Add_productToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: The application at &apos;\AndroidBuilds\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk&apos; does not exist or is not accessible 
+Host info: host: &apos;SF-LAP-1082&apos;, ip: &apos;192.168.1.2&apos;
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;24.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: \AndroidBuilds\Android.Sauc..., appium:automationName: UiAutomator2, appium:deviceName: Medium Phone API 36.0, platformName: ANDROID}]}]
+Capabilities {appium:app: \AndroidBuilds\Android.Sauc..., appium:automationName: UiAutomator2, appium:deviceName: Medium Phone API 36.0, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at Android_config.AppiumSessionManager.startAndroidSession(AppiumSessionManager.java:113)
+	at TestCases.LoginTests.StartAndroid_Session(LoginTests.java:35)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestCases.LoginTests"/>
+       <class name="Android_Automation.TestCases.LoginTests"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
