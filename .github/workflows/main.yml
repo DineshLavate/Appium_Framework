@@ -48,6 +48,7 @@ jobs:
           script: |
             adb wait-for-device
             echo "✅ Emulator is ready!"
+            echo "deviceName=Nexus 6" >> $GITHUB_OUTPUT
 
       # Start Appium server in background
       - name: Start Appium Server
@@ -57,7 +58,7 @@ jobs:
       # Build & Run Tests
       - name: Run Tests with Maven
         run: |
-          mvn clean test -DsuiteXmlFile=testng.xml
+          mvn clean test -DdeviceName=${{ steps.emulator.outputs.deviceName }}
 
       # Upload TestNG Reports
       - name: Archive TestNG Reports
