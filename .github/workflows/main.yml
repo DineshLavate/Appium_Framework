@@ -36,23 +36,21 @@ jobs:
           appium driver install uiautomator2
           appium --version
 
-      # Setup Android Emulator
-      - name: Start Android Emulator
-        uses: reactivecircus/android-emulator-runner@v2
-        with:
-          api-level: 36
-          target: default
-          arch: x86_64
-          profile: Nexus 6
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
-          run: |
-           echo "Starting emulator in the background..."
-           $ANDROID_HOME/emulator/emulator -avd "Nexus_6_API_36" -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim &
-           echo "Waiting for device to be ready..."
-           adb wait-for-device
-           echo "✅ Emulator is ready!"
-           echo "deviceName=Nexus 6" >> $GITHUB_OUTPUT
-           tail -f /dev/null
+      - name: Install system image & create emulator
+        run: |
+          echo "y" | sdkmanager --install "system-images;android-36;default;x86_64"
+          avdmanager create avd -n testEmulator -k "system-images;android-36;default;x86_64" -d "Nexus 6"
+
+      - name: Start Emulator
+        run: |
+         nohup emulator -avd testEmulator -no-window -noaudio -no-boot-anim -gpu swiftshader_indirect &
+         adb wait-for-device
+         until [[ "$(adb shell getprop sys.boot_completed)" == "1" ]]; do
+          echo "⏳ Waiting for emulator to boot..."
+         sleep 5
+         done
+         echo "✅ Emulator is ready!"
+         echo "deviceName=Nexus 6" >> $GITHUB_ENV   
       
       # 🔍 List connected devices (debugging step)
       - name: List available emulators/devices
