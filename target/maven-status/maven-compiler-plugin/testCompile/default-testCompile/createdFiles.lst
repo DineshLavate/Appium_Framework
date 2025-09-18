@@ -1,0 +1,16 @@
+Android_Automation\Utilities\Excel_Utility.class
+Android_Automation\PageObjects\LogInPage.class
+Android_Automation\Utilities\ExceptionHandling.class
+Android_Automation\Utilities\Gesture_Utils.class
+Android_Automation\Android_config\AppiumSessionManager.class
+Android_Automation\Utilities\TestListener.class
+Android_Automation\TestCases\LoginTests.class
+Android_Automation\PageObjects\HomePage.class
+Android_Automation\Utilities\Logs.class
+Android_Automation\Utilities\Utils.class
+Android_Automation\Utilities\ScreenshotUtils.class
+Android_Automation\PageObjects\CheckoutPage.class
+Android_Automation\Utilities\RetryAnalyzer.class
+Android_Automation\Utilities\RetryListener.class
+Android_Automation\Android_config\Appium_BaseService.class
+Android_Automation\Utilities\ExtentReportManager.class

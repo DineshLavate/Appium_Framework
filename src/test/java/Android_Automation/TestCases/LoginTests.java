@@ -18,7 +18,7 @@ public class LoginTests extends AppiumSessionManager{
 	
 	@BeforeTest
 	public static void StartAndroid_Session() throws MalformedURLException, InterruptedException {
-	String deviceName = Utils.getFileProperty("deviceName");
+	String deviceName = System.getProperty("deviceName", Utils.getFileProperty("deviceName"));
 	String udid = Utils.getFileProperty("udid");
 	String platformVersion = Utils.getFileProperty("platformVersion");
 	String automationName = Utils.getFileProperty("automationName");

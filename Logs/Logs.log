@@ -165,3 +165,25 @@
  INFO [2025-09-18 15:24:22,343] (2025-09-18 15:24:22,343:21) - Element is clickable
  INFO [2025-09-18 15:24:22,392] (2025-09-18 15:24:22,392:21) - elements is displayed
  INFO [2025-09-18 15:24:22,901] (2025-09-18 15:24:22,901:21) - 🛑 Android session stopped.
+ INFO [2025-09-18 16:04:11,321] (2025-09-18 16:04:11,321:21) - ✅ Android session started locally on device: Medium Phone API 36.0
+ INFO [2025-09-18 16:04:16,479] (2025-09-18 16:04:16,479:21) - Element is clickable
+ INFO [2025-09-18 16:04:16,528] (2025-09-18 16:04:16,528:21) - elements is displayed
+ INFO [2025-09-18 16:04:18,693] (2025-09-18 16:04:18,693:21) - Element is clickable
+ INFO [2025-09-18 16:04:27,142] (2025-09-18 16:04:27,142:21) - Text got from price
+ INFO [2025-09-18 16:04:27,216] (2025-09-18 16:04:27,216:21) - Element is clickable
+ INFO [2025-09-18 16:04:31,203] (2025-09-18 16:04:31,203:21) - elements is displayed
+ INFO [2025-09-18 16:04:36,403] (2025-09-18 16:04:36,403:21) - Text got from price_Cartpage
+ INFO [2025-09-18 16:04:36,508] (2025-09-18 16:04:36,508:21) - Element is clickable
+ INFO [2025-09-18 16:04:39,796] (2025-09-18 16:04:39,796:21) - Element is clickable
+ INFO [2025-09-18 16:04:39,891] (2025-09-18 16:04:39,891:21) - elements is displayed
+ INFO [2025-09-18 16:04:41,113] (2025-09-18 16:04:41,113:21) - Text Entered into FirstName Text box
+ INFO [2025-09-18 16:04:42,757] (2025-09-18 16:04:42,757:21) - Text Entered into LastName Text box
+ INFO [2025-09-18 16:04:44,370] (2025-09-18 16:04:44,370:21) - Text Entered into ZipCode Text box
+ INFO [2025-09-18 16:04:54,602] (2025-09-18 16:04:54,602:21) - Text got from Success Message
+ INFO [2025-09-18 16:04:54,747] (2025-09-18 16:04:54,747:21) - Text got from Success Description
+ INFO [2025-09-18 16:04:56,833] (2025-09-18 16:04:56,833:21) - Element is clickable
+ INFO [2025-09-18 16:05:02,059] (2025-09-18 16:05:02,059:21) - Element is clickable
+ INFO [2025-09-18 16:05:03,889] (2025-09-18 16:05:03,889:21) - Element is clickable
+ INFO [2025-09-18 16:05:05,674] (2025-09-18 16:05:05,674:21) - Element is clickable
+ INFO [2025-09-18 16:05:05,739] (2025-09-18 16:05:05,739:21) - elements is displayed
+ INFO [2025-09-18 16:05:06,105] (2025-09-18 16:05:06,105:21) - 🛑 Android session stopped.
