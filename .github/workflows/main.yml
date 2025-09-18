@@ -40,7 +40,7 @@ jobs:
       - name: Start Android Emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
+          api-level: 36
           target: default
           arch: x86_64
           profile: Nexus 6
@@ -49,13 +49,6 @@ jobs:
             adb wait-for-device
             echo "📱 Connected devices:"
             adb devices -l
-            # Extra wait to ensure boot complete
-            boot_completed=""
-             while [ -z "$boot_completed" ] || [ "$boot_completed" != "1" ]; do
-            boot_completed=$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
-            sleep 2
-            done
-            echo "✅ Emulator boot completed!"
           
             echo "📱 Connected devices:"
             adb devices -l
@@ -65,7 +58,7 @@ jobs:
 
             echo "📱 Android Version:"
             adb shell getprop ro.build.version.release
-            
+
             # Get device name from adb
             DEVICE_NAME=$(adb shell getprop ro.product.model | tr -d '\r')
             echo "✅ Emulator is ready! Device: $DEVICE_NAME"
