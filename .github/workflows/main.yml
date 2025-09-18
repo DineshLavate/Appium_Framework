@@ -43,7 +43,7 @@ jobs:
           api-level: 30
           target: default
           arch: x86_64
-          profile: Nexus 6
+          profile: Medium Phone API 36.0
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
           script: |
             adb wait-for-device
