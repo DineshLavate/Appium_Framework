@@ -70,7 +70,7 @@ jobs:
             # Set as workflow output
             echo "deviceName=$DEVICE_NAME" >> $GITHUB_OUTPUT
             echo "Running tests on device: $DEVICE_NAME"
-            mvn clean test -DdeviceName="$DEVICE_NAME"
+            mvn clean test -DdeviceName="emulator-5554"
 
       # Upload TestNG Reports
       - name: Archive TestNG Reports
