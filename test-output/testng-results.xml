@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-18T12:29:24 IST" name="Default suite" finished-at="2025-09-18T12:30:29 IST" duration-ms="64581">
+  <suite started-at="2025-09-18T15:23:18 IST" name="Default suite" finished-at="2025-09-18T15:24:22 IST" duration-ms="63972">
     <groups>
     </groups>
-    <test started-at="2025-09-18T12:29:24 IST" name="Default test" finished-at="2025-09-18T12:30:29 IST" duration-ms="64581">
-      <class name="TestCases.LoginTests">
-        <test-method is-config="true" signature="StartAndroid_Session()[pri:0, instance:TestCases.LoginTests@1573f9fc]" started-at="2025-09-18T12:29:24 IST" name="StartAndroid_Session" finished-at="2025-09-18T12:29:30 IST" duration-ms="5726" status="PASS">
+    <test started-at="2025-09-18T15:23:18 IST" name="Default test" finished-at="2025-09-18T15:24:22 IST" duration-ms="63972">
+      <class name="Android_Automation.TestCases.LoginTests">
+        <test-method is-config="true" signature="StartAndroid_Session()[pri:0, instance:Android_Automation.TestCases.LoginTests@1573f9fc]" started-at="2025-09-18T15:23:18 IST" name="StartAndroid_Session" finished-at="2025-09-18T15:23:25 IST" duration-ms="6436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartAndroid_Session -->
-        <test-method signature="Add_productToCart()[pri:0, instance:TestCases.LoginTests@1573f9fc]" started-at="2025-09-18T12:29:30 IST" name="Add_productToCart" finished-at="2025-09-18T12:30:28 IST" duration-ms="58257" status="PASS">
+        <test-method signature="Add_productToCart()[pri:0, instance:Android_Automation.TestCases.LoginTests@1573f9fc]" started-at="2025-09-18T15:23:25 IST" name="Add_productToCart" finished-at="2025-09-18T15:24:22 IST" duration-ms="56998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Add_productToCart -->
-        <test-method is-config="true" signature="stopAndroidSession()[pri:0, instance:TestCases.LoginTests@1573f9fc]" started-at="2025-09-18T12:30:28 IST" name="stopAndroidSession" finished-at="2025-09-18T12:30:29 IST" duration-ms="556" status="PASS">
+        <test-method is-config="true" signature="stopAndroidSession()[pri:0, instance:Android_Automation.TestCases.LoginTests@1573f9fc]" started-at="2025-09-18T15:24:22 IST" name="stopAndroidSession" finished-at="2025-09-18T15:24:22 IST" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopAndroidSession -->
-      </class> <!-- TestCases.LoginTests -->
+      </class> <!-- Android_Automation.TestCases.LoginTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

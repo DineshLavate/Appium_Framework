@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.LoginTests">
+      <class name="Android_Automation.TestCases.LoginTests">
         <methods>
-          <include name="stopAndroidSession"/>
           <include name="Add_productToCart"/>
+          <include name="stopAndroidSession"/>
           <include name="StartAndroid_Session"/>
         </methods>
-      </class> <!-- TestCases.LoginTests -->
+      </class> <!-- Android_Automation.TestCases.LoginTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

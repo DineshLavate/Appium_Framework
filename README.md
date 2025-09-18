@@ -18,26 +18,25 @@ It follows a modular structure with support for Page Object Model (POM), reporti
 
 Appium_Framework
 ├── src
-│ ├── main/java # Reserved for future reusable libraries (currently unused)
-│ ├── main/resources # Reserved for configs (currently unused)
-│ ├── test/java # Test code will be placed here (optional re-structure)
-│ └── test/resources # Test resources like testng.xml/config files
+│   ├── main/java            # Reserved for future reusable libraries (currently unused)
+│   ├── main/resources       # Reserved for configs (currently unused)
+│   ├── test/java
+│   │   └── Android_Automation
+│   │       ├── Android_config   # Appium driver setup, capabilities, environment config
+│   │       ├── PageObjects      # Page Object Model classes (UI mapping + actions)
+│   │       ├── TestCases        # TestNG test classes
+│   │       └── Utilities        # Common utilities (helpers, reusable functions, logs, waits, etc.)
+│   └── test/resources           # Test resources like testng.xml/config files
 │
-├── Android_Automation
-│ ├── Android_config # Appium driver setup, capabilities, environment config
-│ ├── PageObjects # Page Object Model classes (UI mapping + actions)
-│ ├── TestCases # TestNG test classes
-│ └── Utilities # Common utilities (helpers, reusable functions, logs, waits, etc.)
-│
-├── AndroidBuilds # APKs or app bundles used for testing
-├── Logs # Execution logs
-├── ReportGenerator # Custom reporting utilities (if any)
-├── screenshots # Captured screenshots (on failure / reporting)
-├── TestData # Test data files (Excel, JSON, CSV, etc.)
-├── target # Maven build output (compiled classes, reports)
-├── test-output # TestNG reports
-├── pom.xml # Maven dependencies & build config
-└── testng.xml # TestNG suite configuration
+├── AndroidBuilds            # APKs or app bundles used for testing
+├── Logs                     # Execution logs
+├── ReportGenerator           # Custom reporting utilities (ExtentReports / Allure)
+├── screenshots              # Captured screenshots (on failure / reporting)
+├── TestData                 # Test data files (Excel, JSON, CSV, etc.)
+├── target                   # Maven build output (compiled classes, reports)
+├── test-output              # TestNG default reports
+├── pom.xml                  # Maven dependencies & build config
+└── testng.xml               # TestNG suite configuration
 
 
 ---
@@ -86,7 +85,7 @@ To run tests on BrowserStack / Sauce Labs, update credentials in Android_config 
 
 👨‍💻 Author
 
-Your Dinesh Lavate
+Name Dinesh Lavate
 Automation QA | Appium | Selenium | TestNG | CI/CD
 
 

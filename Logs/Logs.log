@@ -77,3 +77,91 @@
  INFO [2025-09-18 12:30:28,535] (2025-09-18 12:30:28,535:21) - Element is clickable
  INFO [2025-09-18 12:30:28,588] (2025-09-18 12:30:28,588:21) - elements is displayed
  INFO [2025-09-18 12:30:29,149] (2025-09-18 12:30:29,149:21) - 🛑 Android session stopped.
+ INFO [2025-09-18 14:11:18,964] (2025-09-18 14:11:18,964:21) - ✅ Android session started locally on device: Medium Phone API 36.0
+ INFO [2025-09-18 14:11:24,183] (2025-09-18 14:11:24,183:21) - Element is clickable
+ INFO [2025-09-18 14:11:24,243] (2025-09-18 14:11:24,243:21) - elements is displayed
+ INFO [2025-09-18 14:11:26,770] (2025-09-18 14:11:26,770:21) - Element is clickable
+ INFO [2025-09-18 14:11:36,214] (2025-09-18 14:11:36,214:21) - Text got from price
+ INFO [2025-09-18 14:11:36,282] (2025-09-18 14:11:36,282:21) - Element is clickable
+ INFO [2025-09-18 14:11:40,291] (2025-09-18 14:11:40,291:21) - elements is displayed
+ INFO [2025-09-18 14:11:45,579] (2025-09-18 14:11:45,579:21) - Text got from price_Cartpage
+ INFO [2025-09-18 14:11:45,728] (2025-09-18 14:11:45,728:21) - Element is clickable
+ INFO [2025-09-18 14:11:49,083] (2025-09-18 14:11:49,083:21) - Element is clickable
+ INFO [2025-09-18 14:11:49,186] (2025-09-18 14:11:49,186:21) - elements is displayed
+ INFO [2025-09-18 14:11:50,506] (2025-09-18 14:11:50,506:21) - Text Entered into FirstName Text box
+ INFO [2025-09-18 14:11:51,629] (2025-09-18 14:11:51,629:21) - Text Entered into LastName Text box
+ INFO [2025-09-18 14:11:53,380] (2025-09-18 14:11:53,380:21) - Text Entered into ZipCode Text box
+ INFO [2025-09-18 14:12:04,303] (2025-09-18 14:12:04,303:21) - Text got from Success Message
+ INFO [2025-09-18 14:12:04,423] (2025-09-18 14:12:04,423:21) - Text got from Success Description
+ INFO [2025-09-18 14:12:06,534] (2025-09-18 14:12:06,534:21) - Element is clickable
+ INFO [2025-09-18 14:12:12,031] (2025-09-18 14:12:12,031:21) - Element is clickable
+ INFO [2025-09-18 14:12:13,867] (2025-09-18 14:12:13,867:21) - Element is clickable
+ INFO [2025-09-18 14:12:15,671] (2025-09-18 14:12:15,671:21) - Element is clickable
+ INFO [2025-09-18 14:12:15,727] (2025-09-18 14:12:15,727:21) - elements is displayed
+ INFO [2025-09-18 14:12:16,355] (2025-09-18 14:12:16,355:21) - 🛑 Android session stopped.
+ INFO [2025-09-18 14:32:08,191] (2025-09-18 14:32:08,191:21) - ✅ Android session started locally on device: Medium Phone API 36.0
+ INFO [2025-09-18 14:32:13,405] (2025-09-18 14:32:13,405:21) - Element is clickable
+ INFO [2025-09-18 14:32:13,501] (2025-09-18 14:32:13,501:21) - elements is displayed
+ INFO [2025-09-18 14:32:15,849] (2025-09-18 14:32:15,849:21) - Element is clickable
+ INFO [2025-09-18 14:32:25,952] (2025-09-18 14:32:25,952:21) - Text got from price
+ INFO [2025-09-18 14:32:26,087] (2025-09-18 14:32:26,087:21) - Element is clickable
+ INFO [2025-09-18 14:32:30,291] (2025-09-18 14:32:30,291:21) - elements is displayed
+ INFO [2025-09-18 14:32:35,550] (2025-09-18 14:32:35,550:21) - Text got from price_Cartpage
+ INFO [2025-09-18 14:32:35,690] (2025-09-18 14:32:35,690:21) - Element is clickable
+ INFO [2025-09-18 14:32:39,007] (2025-09-18 14:32:39,007:21) - Element is clickable
+ INFO [2025-09-18 14:32:39,110] (2025-09-18 14:32:39,110:21) - elements is displayed
+ INFO [2025-09-18 14:32:40,370] (2025-09-18 14:32:40,370:21) - Text Entered into FirstName Text box
+ INFO [2025-09-18 14:32:42,120] (2025-09-18 14:32:42,120:21) - Text Entered into LastName Text box
+ INFO [2025-09-18 14:32:43,841] (2025-09-18 14:32:43,841:21) - Text Entered into ZipCode Text box
+ INFO [2025-09-18 14:32:54,783] (2025-09-18 14:32:54,783:21) - Text got from Success Message
+ INFO [2025-09-18 14:32:54,914] (2025-09-18 14:32:54,914:21) - Text got from Success Description
+ INFO [2025-09-18 14:32:57,013] (2025-09-18 14:32:57,013:21) - Element is clickable
+ INFO [2025-09-18 14:33:02,357] (2025-09-18 14:33:02,357:21) - Element is clickable
+ INFO [2025-09-18 14:33:04,296] (2025-09-18 14:33:04,296:21) - Element is clickable
+ INFO [2025-09-18 14:33:06,093] (2025-09-18 14:33:06,093:21) - Element is clickable
+ INFO [2025-09-18 14:33:06,144] (2025-09-18 14:33:06,144:21) - elements is displayed
+ INFO [2025-09-18 14:33:06,716] (2025-09-18 14:33:06,716:21) - 🛑 Android session stopped.
+ INFO [2025-09-18 15:17:07,792] (2025-09-18 15:17:07,792:21) - ✅ Android session started locally on device: Medium Phone API 36.0
+ INFO [2025-09-18 15:17:12,990] (2025-09-18 15:17:12,990:21) - Element is clickable
+ INFO [2025-09-18 15:17:13,049] (2025-09-18 15:17:13,049:21) - elements is displayed
+ INFO [2025-09-18 15:17:15,422] (2025-09-18 15:17:15,422:21) - Element is clickable
+ INFO [2025-09-18 15:17:25,829] (2025-09-18 15:17:25,829:21) - Text got from price
+ INFO [2025-09-18 15:17:25,961] (2025-09-18 15:17:25,961:21) - Element is clickable
+ INFO [2025-09-18 15:17:30,094] (2025-09-18 15:17:30,094:21) - elements is displayed
+ INFO [2025-09-18 15:17:35,376] (2025-09-18 15:17:35,376:21) - Text got from price_Cartpage
+ INFO [2025-09-18 15:17:35,532] (2025-09-18 15:17:35,532:21) - Element is clickable
+ INFO [2025-09-18 15:17:38,979] (2025-09-18 15:17:38,979:21) - Element is clickable
+ INFO [2025-09-18 15:17:39,072] (2025-09-18 15:17:39,072:21) - elements is displayed
+ INFO [2025-09-18 15:17:40,324] (2025-09-18 15:17:40,324:21) - Text Entered into FirstName Text box
+ INFO [2025-09-18 15:17:42,082] (2025-09-18 15:17:42,082:21) - Text Entered into LastName Text box
+ INFO [2025-09-18 15:17:43,337] (2025-09-18 15:17:43,337:21) - Text Entered into ZipCode Text box
+ INFO [2025-09-18 15:17:54,987] (2025-09-18 15:17:54,987:21) - Text got from Success Message
+ INFO [2025-09-18 15:17:55,178] (2025-09-18 15:17:55,178:21) - Text got from Success Description
+ INFO [2025-09-18 15:17:57,336] (2025-09-18 15:17:57,336:21) - Element is clickable
+ INFO [2025-09-18 15:18:03,206] (2025-09-18 15:18:03,206:21) - Element is clickable
+ INFO [2025-09-18 15:18:05,100] (2025-09-18 15:18:05,100:21) - Element is clickable
+ INFO [2025-09-18 15:18:06,946] (2025-09-18 15:18:06,946:21) - Element is clickable
+ INFO [2025-09-18 15:18:07,028] (2025-09-18 15:18:07,028:21) - elements is displayed
+ INFO [2025-09-18 15:18:07,714] (2025-09-18 15:18:07,714:21) - 🛑 Android session stopped.
+ INFO [2025-09-18 15:23:25,360] (2025-09-18 15:23:25,360:21) - ✅ Android session started locally on device: Medium Phone API 36.0
+ INFO [2025-09-18 15:23:30,594] (2025-09-18 15:23:30,594:21) - Element is clickable
+ INFO [2025-09-18 15:23:30,710] (2025-09-18 15:23:30,710:21) - elements is displayed
+ INFO [2025-09-18 15:23:33,114] (2025-09-18 15:23:33,114:21) - Element is clickable
+ INFO [2025-09-18 15:23:42,403] (2025-09-18 15:23:42,403:21) - Text got from price
+ INFO [2025-09-18 15:23:42,468] (2025-09-18 15:23:42,468:21) - Element is clickable
+ INFO [2025-09-18 15:23:46,447] (2025-09-18 15:23:46,447:21) - elements is displayed
+ INFO [2025-09-18 15:23:51,716] (2025-09-18 15:23:51,716:21) - Text got from price_Cartpage
+ INFO [2025-09-18 15:23:51,898] (2025-09-18 15:23:51,898:21) - Element is clickable
+ INFO [2025-09-18 15:23:55,148] (2025-09-18 15:23:55,148:21) - Element is clickable
+ INFO [2025-09-18 15:23:55,238] (2025-09-18 15:23:55,238:21) - elements is displayed
+ INFO [2025-09-18 15:23:56,488] (2025-09-18 15:23:56,488:21) - Text Entered into FirstName Text box
+ INFO [2025-09-18 15:23:58,261] (2025-09-18 15:23:58,261:21) - Text Entered into LastName Text box
+ INFO [2025-09-18 15:23:59,953] (2025-09-18 15:23:59,953:21) - Text Entered into ZipCode Text box
+ INFO [2025-09-18 15:24:11,170] (2025-09-18 15:24:11,170:21) - Text got from Success Message
+ INFO [2025-09-18 15:24:11,333] (2025-09-18 15:24:11,333:21) - Text got from Success Description
+ INFO [2025-09-18 15:24:13,454] (2025-09-18 15:24:13,454:21) - Element is clickable
+ INFO [2025-09-18 15:24:18,758] (2025-09-18 15:24:18,758:21) - Element is clickable
+ INFO [2025-09-18 15:24:20,540] (2025-09-18 15:24:20,540:21) - Element is clickable
+ INFO [2025-09-18 15:24:22,343] (2025-09-18 15:24:22,343:21) - Element is clickable
+ INFO [2025-09-18 15:24:22,392] (2025-09-18 15:24:22,392:21) - elements is displayed
+ INFO [2025-09-18 15:24:22,901] (2025-09-18 15:24:22,901:21) - 🛑 Android session stopped.
