@@ -49,6 +49,13 @@ jobs:
             adb wait-for-device
             echo "✅ Emulator is ready!"
             echo "deviceName=Nexus 6" >> $GITHUB_OUTPUT
+      
+      # 🔍 List connected devices (debugging step)
+      - name: List available emulators/devices
+        run: |
+          adb devices -l
+          adb shell getprop ro.product.model
+          adb shell getprop ro.build.version.release
 
       # Start Appium server in background
       - name: Start Appium Server
