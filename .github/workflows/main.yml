@@ -36,6 +36,11 @@ jobs:
           appium driver install uiautomator2
           appium --version
 
+       # Start Appium server in background
+      - name: Start Appium Server
+        run: |
+          nohup appium > appium.log 2>&1 &
+
       # Setup Android Emulator
       - name: Start Android Emulator
         uses: reactivecircus/android-emulator-runner@v2
@@ -64,33 +69,8 @@ jobs:
             echo "✅ Emulator is ready! Device: $DEVICE_NAME"
             # Set as workflow output
             echo "deviceName=$DEVICE_NAME" >> $GITHUB_OUTPUT
-
-      - name: Restart Emulator
-        run: |
-          echo "🔄 Starting emulator again..."
-          nohup $ANDROID_HOME/emulator/emulator -avd testEmulator -no-window -noaudio -no-boot-anim -gpu swiftshader_indirect &
-          adb wait-for-device
-
-          boot_completed=""
-          until [[ "$boot_completed" == "1" ]]; do
-          boot_completed=$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
-          echo "⏳ Waiting for emulator boot..."
-          sleep 5
-          done
-
-          DEVICE_NAME=$(adb shell getprop ro.product.model | tr -d '\r')
-          echo "✅ Emulator restarted! Device: $DEVICE_NAME"
-          echo "deviceName=$DEVICE_NAME" >> $GITHUB_OUTPUT
-
-      # Start Appium server in background
-      - name: Start Appium Server
-        run: |
-          nohup appium > appium.log 2>&1 &
-
-      # Build & Run Tests
-      - name: Run Tests with Maven
-        run: |
-          mvn clean test -DdeviceName=${{ steps.emulator.outputs.deviceName }}
+            echo "Running tests on device: $DEVICE_NAME"
+            mvn clean test -DdeviceName="$DEVICE_NAME"
 
       # Upload TestNG Reports
       - name: Archive TestNG Reports
