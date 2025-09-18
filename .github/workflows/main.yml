@@ -42,6 +42,10 @@ jobs:
          api-level: 36
          target: default
          arch: x86_64
+         
+      # 2️⃣ Accept licenses
+      - name: Accept Android SDK licenses
+        run: yes | sdkmanager --licenses
 
       - name: Install system image & create emulator
         run: |
