@@ -36,38 +36,24 @@ jobs:
           appium driver install uiautomator2
           appium --version
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v2
+      # Setup Android Emulator
+      - name: Start Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
         with:
-         api-level: 36
-         target: default
-         arch: x86_64
-
-      # 2️⃣ Accept licenses
-      - name: Accept Android SDK licenses
-        run: yes | sdkmanager --licenses
-
-      # 3️⃣ Create AVD using the SDK’s default system image
-      - name: Create Emulator
-        run: |
-          # Delete if AVD exists
-          if avdmanager list avd | grep -q "testEmulator"; then
-            avdmanager delete avd -n testEmulator
-          fi
-
-          # Create AVD using the default system image (no explicit install)
-          avdmanager create avd -n testEmulator -k "system-images;android-36;default;x86_64" -d "Nexus 6" --force
-
-      - name: Start Emulator
-        run: |
-         nohup emulator -avd testEmulator -no-window -noaudio -no-boot-anim -gpu swiftshader_indirect &
-         adb wait-for-device
-         until [[ "$(adb shell getprop sys.boot_completed)" == "1" ]]; do
-          echo "⏳ Waiting for emulator to boot..."
-         sleep 5
-         done
-         echo "✅ Emulator is ready!"
-         echo "deviceName=Nexus 6" >> $GITHUB_ENV   
+          api-level: 30
+          target: default
+          arch: x86_64
+          profile: Nexus 6
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
+          script: |
+            adb wait-for-device
+            echo "📱 Connected devices:"
+            adb devices -l
+            # Get device name from adb
+            DEVICE_NAME=$(adb shell getprop ro.product.model | tr -d '\r')
+            echo "✅ Emulator is ready! Device: $DEVICE_NAME"
+            # Set as workflow output
+            echo "deviceName=$DEVICE_NAME" >> $GITHUB_OUTPUT
       
       # 🔍 List connected devices (debugging step)
       - name: List available emulators/devices
