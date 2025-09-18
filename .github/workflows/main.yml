@@ -36,6 +36,13 @@ jobs:
           appium driver install uiautomator2
           appium --version
 
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+         api-level: 36
+         target: default
+         arch: x86_64
+
       - name: Install system image & create emulator
         run: |
           echo "y" | sdkmanager --install "system-images;android-36;default;x86_64"
