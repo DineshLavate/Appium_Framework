@@ -40,15 +40,19 @@ jobs:
       - name: Start Android Emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 30
+          api-level: 36
           target: default
           arch: x86_64
           profile: Nexus 6
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
-          script: |
-            adb wait-for-device
-            echo "✅ Emulator is ready!"
-            echo "deviceName=Nexus 6" >> $GITHUB_OUTPUT
+          run: |
+           echo "Starting emulator in the background..."
+           $ANDROID_HOME/emulator/emulator -avd "Nexus_6_API_36" -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim &
+           echo "Waiting for device to be ready..."
+           adb wait-for-device
+           echo "✅ Emulator is ready!"
+           echo "deviceName=Nexus 6" >> $GITHUB_OUTPUT
+           tail -f /dev/null
       
       # 🔍 List connected devices (debugging step)
       - name: List available emulators/devices
