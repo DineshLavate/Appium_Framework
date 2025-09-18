@@ -90,6 +90,7 @@ public class AppiumSessionManager {
 	            options.setPlatformName(platformName);
 				options.setCapability("uiautomator2ServerInstallTimeout", 120000);
                 options.setCapability("adbExecTimeout", 120000);
+                options.setCapability("androidInstallTimeout", 300000);           // 5 min
 
 	            if (udid != null && !udid.equalsIgnoreCase("null") && !udid.isEmpty()) {
 	                options.setUdid(udid);

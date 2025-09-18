@@ -63,7 +63,14 @@ jobs:
 
             echo "📱 Android Version:"
             adb shell getprop ro.build.version.release
-
+            
+            boot_completed=""
+            until [[ "$boot_completed" == "1" ]]; do
+              boot_completed=$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
+              echo "⏳ Waiting for emulator boot..."
+              sleep 5
+            done
+            echo "✅ Emulator boot completed"
             # Get device name from adb
             DEVICE_NAME=$(adb shell getprop ro.product.model | tr -d '\r')
             echo "✅ Emulator is ready! Device: $DEVICE_NAME"
