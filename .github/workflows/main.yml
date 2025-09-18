@@ -64,28 +64,23 @@ jobs:
             echo "✅ Emulator is ready! Device: $DEVICE_NAME"
             # Set as workflow output
             echo "deviceName=$DEVICE_NAME" >> $GITHUB_OUTPUT
-      
-      # 🔍 List connected devices (debugging step)
-      - name: List available emulators/devices
+
+      - name: Restart Emulator
         run: |
-          echo "⏳ Waiting for emulator to boot..."
+          echo "🔄 Starting emulator again..."
+          nohup $ANDROID_HOME/emulator/emulator -avd testEmulator -no-window -noaudio -no-boot-anim -gpu swiftshader_indirect &
           adb wait-for-device
-          # Extra wait to ensure boot complete
+
           boot_completed=""
-          while [ -z "$boot_completed" ] || [ "$boot_completed" != "1" ]; do
-            boot_completed=$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
-            sleep 2
+          until [[ "$boot_completed" == "1" ]]; do
+          boot_completed=$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
+          echo "⏳ Waiting for emulator boot..."
+          sleep 5
           done
-          echo "✅ Emulator boot completed!"
-          
-          echo "📱 Connected devices:"
-          adb devices -l
 
-          echo "📱 Device Model:"
-          adb shell getprop ro.product.model
-
-          echo "📱 Android Version:"
-          adb shell getprop ro.build.version.release
+          DEVICE_NAME=$(adb shell getprop ro.product.model | tr -d '\r')
+          echo "✅ Emulator restarted! Device: $DEVICE_NAME"
+          echo "deviceName=$DEVICE_NAME" >> $GITHUB_OUTPUT
 
       # Start Appium server in background
       - name: Start Appium Server
