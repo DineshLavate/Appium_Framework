@@ -42,15 +42,21 @@ jobs:
          api-level: 36
          target: default
          arch: x86_64
-         
+
       # 2️⃣ Accept licenses
       - name: Accept Android SDK licenses
         run: yes | sdkmanager --licenses
 
-      - name: Install system image & create emulator
+      # 3️⃣ Create AVD using the SDK’s default system image
+      - name: Create Emulator
         run: |
-          echo "y" | sdkmanager --install "system-images;android-36;default;x86_64"
-          avdmanager create avd -n testEmulator -k "system-images;android-36;default;x86_64" -d "Nexus 6"
+          # Delete if AVD exists
+          if avdmanager list avd | grep -q "testEmulator"; then
+            avdmanager delete avd -n testEmulator
+          fi
+
+          # Create AVD using the default system image (no explicit install)
+          avdmanager create avd -n testEmulator -k "system-images;android-36;default;x86_64" -d "Nexus 6" --force
 
       - name: Start Emulator
         run: |
