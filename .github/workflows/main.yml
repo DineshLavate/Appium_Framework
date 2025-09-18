@@ -1,0 +1,67 @@
+name: Android Appium Tests Demo
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test-android:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Java
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # Setup Node.js (required for Appium)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Install Appium + drivers
+      - name: Install Appium
+        run: |
+          npm install -g appium@next
+          appium driver install uiautomator2
+          appium --version
+
+      # Setup Android Emulator
+      - name: Start Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: default
+          arch: x86_64
+          profile: Nexus 6
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
+          script: |
+            adb wait-for-device
+            echo "✅ Emulator is ready!"
+
+      # Start Appium server in background
+      - name: Start Appium Server
+        run: |
+          nohup appium > appium.log 2>&1 &
+
+      # Build & Run Tests
+      - name: Run Tests with Maven
+        run: |
+          mvn clean test -DsuiteXmlFile=testng.xml
+
+      # Upload TestNG Reports
+      - name: Archive TestNG Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: testng-reports
+          path: test-output/
